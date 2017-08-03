@@ -40,17 +40,32 @@
 						<li>Work at OnlineMedEd</li>
 					</ul>
 				</section>
-				<section id="fragments">
-					<h2>A Brief History of Laravel</h2>
-					<ul>
-						<li class="fragment">First beta release in June, 2011</li> <!-- Laravel 1 came out later that same month -->
-						<li class="fragment">Laravel 1: lacked support for controllers</li> <!-- which prevented it from being truly MVC -->
-						<li class="fragment">Laravel 2: released in September, 2011</li> <!-- became a true MVC framework -->
-						<li class="fragment">Laravel 3: released in February, 2012</li> <!-- included CLI we know as artisan -->
-						<li class="fragment">Laravel 4: released in May, 2013</li> <!-- included a complete rewrite of Laravel -->
-						<li class="fragment">Laravel 5: released in February, 2015</li>
-						<li class="fragment">5.1, 5.2, 5.3, 5.4, 5.5...</li>
-					</ul>
+				<section>
+					<section id="fragments">
+						<h2>A Brief History of Laravel</h2>
+						<ul>
+							<li class="fragment">First beta release in June, 2011</li> <!-- Laravel 1 came out later that same month -->
+							<li class="fragment">Laravel 1: lacked support for controllers</li> <!-- which prevented it from being truly MVC -->
+							<li class="fragment">Laravel 2: released in September, 2011</li> <!-- became a true MVC framework -->
+							<li class="fragment">Laravel 3: released in February, 2012</li> <!-- included CLI we know as artisan -->
+							<li class="fragment">Laravel 4: released in May, 2013</li> <!-- included a complete rewrite of Laravel -->
+							<li class="fragment">Laravel 5: released in February, 2015</li>
+							<li class="fragment">5.1, 5.2, 5.3, 5.4, 5.5...</li>
+						</ul>
+
+						<aside class="notes">
+							Laravel 1 came out later that month </br>
+							Lack of controllers prevented it from truly being MVC </br>
+							2: Became a true MVC framework </br>
+							3: Included CLI we know as Artisan </br>
+							4: Included a complete rewrite of Laravel </br>
+							5: The Laravel we know and love today </br>
+						</aside>
+					</section>
+					<section>
+						<h2>Let's See How it Stacks Up Against the Rest</h2>
+						<img src="laravel-v-others.png" style="width: 50%; height: 50%">
+					</section>
 				</section>
 				<section id="fragments">
 					<h2>A Brief History of PHP</h2>
@@ -60,18 +75,17 @@
 						<li class="fragment">PHP 3: Andi Gutmans and Zeev Suraski rewrote the underlying parser in 1997</li>
 						<li class="fragment">PHP 4: PHP core rewritten in 1998</li> <!-- became Hypertext Preprocessor -->
 						<li class="fragment">PHP 5: Improved support for OOP in 2004!</li>
-						<li class="fragment">PHP 6</li> <!-- lack of Unicode support initiated PHP 6 but a lack of developers stopped this -->
+						<li class="fragment">PHP 6<span class="fragment">: ???</span></li> <!-- lack of Unicode support initiated PHP 6 but a lack of developers stopped this -->
 						<li class="fragment">PHP 7: released in 2015</li> <!-- the PHP we know and love today -->
 					</ul>
-				</section>
-				<section>
-					<h2>How We Use Laravel at OME</h2>
-					<ul>
-						<li>It runs our main site</li>
-						<li>Our CMS</li>
-						<li>Our faculty portal</li>
-						<li>And it will continue to be implemented into more projects as the company grows</li>
-					</ul>
+
+					<aside class="notes">
+						Started as 'Personal Home Page'</br>
+						3: Was for an ecommerce school project - they wanted PHP to support what they needed it for</br>
+						4: Became Hypertext Preprocessor</br>
+						6: Lack of Unicode support initiated PHP 6 but a lack of developers caused it to fall flat</br>
+						7: The PHP we know and love today
+					</aside>
 				</section>
 				<section>
 					<section id="fragments">
@@ -85,6 +99,12 @@
 							<li class="fragment">Ruby - 1995</li> <!-- was OOP language from the very beginning -->
 							<li class="fragment">PHP was out for 9 years before it supported object-oriented programming</li>
 						</ul>
+
+						<aside class="notes">
+							Python: Was an object-oriented porgraming language from the very beginning </br>
+							Ruby: Was an object-oriented programming language from the very beginning </br>
+							Wtf PHP?
+						</aside>
 					</section>
 					<section>
 						<h2>Hiring</h2>
@@ -101,6 +121,14 @@
 							<li>Large learning curve</li>
 							<li>How well do you know PHP?</li> <!-- Because Laravel strips out a lot of the weirdness in PHP -->
 						</ul>
+
+						<aside class="notes">
+							Backwards: Laravel 5.5 only supports PHP 7 </br>
+							Learning curve: Easy to get started but what about Facades & wtf is an IoC Container? </br>
+							Laravel is magic - which is great until something breaks and you have no idea what's going on because everything is obfuscated</br>
+							For example - what's a facade? what's a service container?</br>
+							Laravel strips out a lot of the weirdness of PHP - are you a PHP dev or a Laravel dev?
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -120,21 +148,87 @@
 						</ul>
 					</section>
 					<section>
-						<h2>Laravel's Growth</h2>
-						<ul>
-							<li>2016 - 5.3 was announced</li>
-							<li>2017 - 5.5 was announced</li>
-						</ul>
-					</section>
-					<section>
 						<h2>PHP is Weird</h2>
 						<h5>Laravel protects you from a lot of that weirdness</h5>
+
+						<aside class="notes">
+							While this is a con, it's also a pro - you don't have to worry about all the flaws of the language
+						</aside>
 					</section>
 					<section id="fragments">
 						<h2>Unexpected T_PAAMAYIM_NEKUDOTAYIM</h2>
 						<h5 class="fragment">?!?!?!?!</h5>
+
+						<aside class="notes">
+							Like this.. It means 'double colon' in Hebrew
+						</aside>
+					</section>
+					<section>
+						<h2>More...</h2>
+						<ul>
+							<li>Laravel is constantly growing and releasing new features</li>
+							<li>Facades & Service Containers</li>
+						</ul>
+
+						<aside class="notes">
+							The difference between 5.3 and 5.5 is one year - that's pretty crazy for 3 versions</br>
+							Facades are a static interface for integrating classes with Laravel
+							Instead of instatinating a class, passing in the dependencies, etc.
+							You use a facade and laravel takes care of the whole process for you behind the scenes.</br>
+							But Jeffrey Way can describe this stuff a lot better than I can - laracasts</br>
+						</aside>
 					</section>
 				</section>
+
+
+				<section>
+					<section>
+						<h1>Laravel at OnlineMedEd</h1>
+					</section>
+					<section>
+						<h2>How We Use Laravel</h2>
+						<ul>
+							<li>It runs our main site</li>
+							<li>Our CMS</li>
+							<li>Our billing API</li>
+							<li>Our faculty portal</li>
+							<li>And it will continue to be implemented into more projects as the company grows</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Facing Your Demons</h2>
+						<ul>
+							<li>Upgrade from 4.2 to 5.3</li>
+							<li>Implementing API authentication</li>
+							<li>Implementing social logins</li>
+						</ul>
+
+						<aside class="notes">
+							Again, Laravel isn't backwards compatible so the upgrade was a disaster. Almost everything broke</br>
+							Authentication without Laravel & everything it provides would have been a nightmare - a secondary package would have been required
+							and what are the chances that something like that gets maintained properly?</br>
+							Social logins would also require a package and would get unbelievably messy and untameable.</br>
+						</aside>
+					</section>
+					<section>
+						<h2>Learning From Your Demons</h2>
+						<ul>
+							<li>Laravel's extensive documentation</li>
+							<li>The community</li>
+							<li>Laravel Passport & Auth facade</li>
+							<li>Laravel Socialite</li>
+						</ul>
+						<aside class="notes">
+							The extensive documentation carefully traced all the steps necessary for the upgrade</br>
+							Whatever the documentation lacked - the community helped with - your question has already been answered</br>
+							For authentication - Laravel offers two amazing packages (Passport & Socialite)</br>
+							Passport - provides a full OAuth2 server implementation for API authentication (announced in 2016 at Laracon)</br>
+							Socialite - fluent interface to OAuth authentication with FB, G+, Twitter, more </br>
+							Whenever the FB API changes - Socialite changes with you, we no longer have to worry about our social logins breaking with every update.
+						</aside>
+					</section>
+				</section>
+
 			</div>
 		</div>
 
