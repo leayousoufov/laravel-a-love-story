@@ -29,9 +29,9 @@
 					<p>
 						<small>Lea Yousoufov / <a href="http://twitter.com/alltimelea">@alltimelea</a></small>
 					</p>
-					<img src="images/cat-sign.png" style="width: 20%; height: 20%; border: none; background: #222222; box-shadow: none">
-
+					<img src="images/cat-sign.png" style="width: 30%; height: 30%; border: none; background: #222222; box-shadow: none; position: fixed; bottom: 0px; right: 0px;">
 				</section>
+
 				<section>
 					<h2>About Me</h2>
 					<ul>
@@ -42,10 +42,12 @@
 						<li>Work at OnlineMedEd</li>
 					</ul>
 				</section>
+
 				<section>
 					<section>
 						<h1>A Brief History</h1>
 					</section>
+
 					<section id="fragments">
 						<img src="images/timelinephp.png">
 
@@ -57,6 +59,7 @@
 						7: The PHP we know and love today
 						</aside>
 					</section>
+
 					<section>
 						<img src="images/timelinelaravel.png">
 
@@ -70,6 +73,7 @@
 						</aside>
 					</section>
 				</section>
+
 				<section>
 					<img src="images/pros-cons.png" style="border: none; background: #222222; box-shadow: none">
 
@@ -77,11 +81,13 @@
 						Let's talk pros & cons
 					</aside>
 				</section>
+
 				<section>
 					<section id="fragments">
 						<h1>Cons</h1>
 						<h5 class="fragment">*Mostly grievences with PHP</h5>
 					</section>
+
 					<section id="fragments">
 						<h2>Let's Compare</h2>
 						<ul>
@@ -97,39 +103,46 @@
 							It was finally able to meet the demand of its users
 						</aside>
 					</section>
+
 					<section>
 						<h2>Backwards Compatibility</h2>
-						<h5>As we scaled, legacy code was a stubborn shrew</h5>
+						<h5>As you scale and upgrade, legacy code becomes a stubborn shrew</h5>
 
 						<aside class="notes">
-
+							Upgrading to the latest version of Laravel requires a lot of changes, most of them small
+							but things tend to break. </br>
+							Laravel 5.5 is also requiring PHP 7</br>
+							Laravel also does not support bug fixes for old versions
 						</aside>
 					</section>
+
 					<section>
 						<h2>Hiring</h2>
 						<h5>It's difficult to hire good developers to tackle a legacy code base in PHP</h5>
 					</section>
+
 					<section>
 						<h2>More...</h2>
 						<ul>
-							<li>Not backwards compatible</li> <!-- Between Laravel version and PHP versions-->
+							<li>Hiring</li>
 							<li>Large learning curve</li>
 							<li>How well do you know PHP?</li> <!-- Because Laravel strips out a lot of the weirdness in PHP -->
 						</ul>
 
 						<aside class="notes">
-							Backwards: Laravel 5.5 only supports PHP 7 </br>
-							Learning curve: Easy to get started but what about Facades & wtf is an IoC Container? </br>
+							Hiring: It's difficult to hire good developers to tackle a legacy code base in PHP </br>
+							Learning curve: Easy to get started but what about Facades & wtf is Service Container? </br>
 							Laravel is magic - which is great until something breaks and you have no idea what's going on because everything is obfuscated</br>
-							For example - what's a facade? what's a service container?</br>
 							Laravel strips out a lot of the weirdness of PHP - are you a PHP dev or a Laravel dev?
 						</aside>
 					</section>
 				</section>
+
 				<section>
 					<section>
 						<h1>Pros</h1>
 					</section>
+
 					<section id="fragments">
 						<h2>The Laravel Community</h2>
 						<ul>
@@ -142,6 +155,7 @@
 							<li class="fragment">Etc...</li>
 						</ul>
 					</section>
+
 					<section>
 						<h2>PHP is Weird</h2>
 						<h5>Laravel protects you from a lot of that weirdness</h5>
@@ -150,6 +164,7 @@
 							While this is a con, it's also a pro - you don't have to worry about all the flaws of the language
 						</aside>
 					</section>
+
 					<section id="fragments">
 						<h2>Unexpected T_PAAMAYIM_NEKUDOTAYIM</h2>
 						<h5 class="fragment">?!?!?!?!</h5>
@@ -158,15 +173,18 @@
 							Like this.. It means 'double colon' in Hebrew
 						</aside>
 					</section>
+
 					<section>
 						<h2>Let's See How it Stacks Up Against the Rest</h2>
 						<img src="images/laravel-v-others.png" style="width: 50%; height: 50%">
 					</section>
+
 					<section>
 						<h2>More...</h2>
 						<ul>
 							<li>Laravel is constantly growing and releasing new features</li>
 							<li>Facades & Service Containers</li>
+							<li>It's simple</li>
 						</ul>
 
 						<aside class="notes">
@@ -175,17 +193,44 @@
 							Instead of instatinating a class, passing in the dependencies, etc.
 							You use a facade and laravel takes care of the whole process for you behind the scenes.</br>
 							But Jeffrey Way can describe this stuff a lot better than I can - laracasts</br>
+							Simplicity is Laravel's motto - Easy enough for wordpress, custom enough for enterprise needs
+						</aside>
+					</section>
+
+					<section>
+						<h2>Laravel's Growth</h2>
+						<ul>
+							<li>Laravel 5.5</li>
+							<li>Laravel Horizon</li>
+							<li>Laravel Spark</li>
+							<li>Laravel Shift</li>
+							<li>Forge</li>
+							<li>Laravel Cashier</li>
+							<li>Laravel Scout</li>
+							<li>The list goes on...</li>
+						</ul>
+
+						<aside class="notes">
+							Since 2011, Laravel has released all these and more</br>
+							5.5 will offer many new features - including long term service, rendering mailables in the browser - makes it easy to test,
+							new react frontend presets, error page design improvement, etc..</br>
+							Horizon - a beautiful dashboard for all your jobs</br>
+							Spark - plug and play software as a service</br>
+							Shift - lets you upgrade your laravel app seamlessly</br>
+							Forge - painless PHP deployment</br>
+							Cashier - fluent interface to Stripe's and Braintree's subscription billing services</br>
+							Scout - add full-text search to your eloquent models
 						</aside>
 					</section>
 				</section>
 
-
 				<section>
 					<section>
 						<h1>Laravel at OnlineMedEd</h1>
-						<img src="images/cat-laravel.png" style="width: 20%; height: 20%; border: none; background: #222222; box-shadow: none">
 
+						<img src="images/cat-laravel.png" style="width: 20%; height: 20%; border: none; background: #222222; box-shadow: none">
 					</section>
+
 					<section>
 						<h2>How We Use Laravel</h2>
 						<ul>
@@ -193,45 +238,91 @@
 							<li>Our CMS</li>
 							<li>Our billing API</li>
 							<li>Our faculty portal</li>
-							<li>And it will continue to be implemented into more projects as the company grows</li>
+							<li>Apps, APIs, oh my</li>
 						</ul>
+
+						<aside class="notes">
+							OME is an adult learning platform using medicine as it's sandbox - think Khan Academy for med students</br>
+							Main site: B2C</br>
+							Internal use</br>
+							Institution facing site: b2b</br>
+							And it will continue to be implemented into more projects as the company grows
+						</aside>
 					</section>
-					<section>
-						<h2>Facing Your Demons</h2>
+				</section>
+
+				<section>
+					<section id="fragments">
+						<h1>Facing and Tending to Your Demons</h1>
+
+						<img class="fragment" src="images/ugh.gif" style="width: 20%; height: 30%; position: fixed; bottom: 0px; left: 0px;" >
+
+						<img class="fragment" src="images/work.gif" style="width: 20%; height: 30%; position: fixed; bottom: 0px; right: 0px;" >
+					</section>
+
+					<section id="fragments">
+						<h2>The Upgrade from 4.2 to 5.3</h2>
 						<ul>
-							<li>Upgrade from 4.2 to 5.3</li>
-							<li>Implementing API authentication</li>
-							<li>Implementing social logins</li>
+							<li class="fragment">Backwards compatible</li>
+							<li class="fragment">Extensive documentation</li>
+							<li class="fragment">Huge community</li>
 						</ul>
 
 						<aside class="notes">
 							Again, Laravel isn't backwards compatible so the upgrade was a disaster. Almost everything broke</br>
-							Authentication without Laravel & everything it provides would have been a nightmare - a secondary package would have been required
-							and what are the chances that something like that gets maintained properly?</br>
-							Social logins would also require a package and would get unbelievably messy and untameable.</br>
-						</aside>
-					</section>
-					<section>
-						<h2>Tending to Your Demons</h2>
-						<ul>
-							<li>Laravel's extensive documentation</li>
-							<li>The community</li>
-							<li>Laravel Passport & Auth facade</li>
-							<li>Laravel Socialite</li>
-						</ul>
-						<aside class="notes">
 							The extensive documentation carefully traced all the steps necessary for the upgrade</br>
 							Whatever the documentation lacked - the community helped with - your question has already been answered</br>
+							And if it wasn't answered - I had 4 places to post my question</br>
+						</aside>
+					</section>
+
+					<section id="fragments">
+						<h2>Implementing API & Social Authentication</h2>
+						<ul>
+							<li class="fragment">Third-party packages</li>
+							<li class="fragment">Laravel Passport</li>
+							<li class="fragment">Laravel Socialite</li>
+						</ul>
+
+						<aside class="notes">
+							Authentication without Laravel & everything it provides would have been a nightmare - a third-party package would have been required
+							and what are the chances that something like that gets maintained properly?</br>
+							Social logins would also require a package and the code for this would get real messy and untameable real fast.</br>
 							For authentication - Laravel offers two amazing packages (Passport & Socialite)</br>
 							Passport - provides a full OAuth2 server implementation for API authentication (announced in 2016 at Laracon)</br>
 							Socialite - fluent interface to OAuth authentication with FB, G+, Twitter, more </br>
-							Whenever the FB API changes - Socialite changes with you, we no longer have to worry about our social logins breaking with every update.
+							Whenever the FB API changes - Socialite changes with you, we no longer have to worry about our social logins breaking with every update.</br>
 						</aside>
 					</section>
-					<section>
-						<h2>Learning From Your Demons</h2>
 
+					<section id="fragments">
+						<h2>Database Queries</h2>
+						<ul>
+							<li>Insecure</li>
+							<li>Long and unruly</li>
+							<li>FLuent query builder</li>
+							<li>Eloquent ORM</li>
+						</ul>
+
+						<pre><code class="hljs" data-trim contenteditable>
+
+						</code></pre>
+
+						<aside class="notes">
+							Database queries would be insecure and to malicious attacks if we only wrote raw sql queries</br>
+							Raw database queries can also get long, unruly, and disgusting.</br>
+							Laravel's fluent query builder use PDO parameter binding to protect against SQL injection attacks</br>
+							laravel's eloquent orm allows you to seamlessly fetch model data from the database
+						</aside>
 					</section>
+
+				</section>
+
+				<section>
+					<h2>Learning From Your Demons</h2>
+
+					<img src="images/mini-thumbs.gif" style="width: 20%; height: 30%; position: fixed; bottom: 0px; right: 0px;" >
+
 				</section>
 
 			</div>
